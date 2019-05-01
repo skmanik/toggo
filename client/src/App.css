@@ -1,0 +1,46 @@
+body, html {
+  min-height: 100vh;
+  background: #209cee;
+  color: #ffffff !important;
+}
+
+.the-cost {
+  max-width: 120px;
+}
+
+.lillun {
+  color: #ffffff !important;
+}
+
+.got-items li {
+  background: #ffcecf;
+  color: #626262;
+  margin-bottom: 3px;
+  padding: 0.35rem 0.5rem;
+}
+
+.big-control {
+  flex: 1;
+}
+
+.button {
+  background: #626262 !important;
+}
+
+@media screen and (min-width: 800px) {
+  .got-items li {
+    max-width: 50%;
+  }
+
+  .the-cost {
+    max-width: 120px;
+  }
+
+  .big-control {
+    flex: none;
+  }
+
+  .bc-input {
+    min-width: 300px;
+  }
+}
