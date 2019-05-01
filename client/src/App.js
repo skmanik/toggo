@@ -61,7 +61,11 @@ class App extends Component {
               <h2 className="title is-size-4 lillun">Things end up here.</h2>
               <ul className="got-items">
                 {this.state.items.map((item) => {
-                  return (<li key={Math.floor(Math.random() * 10000) + 1}>{item}</li>);
+                  return (
+                    <li key={Math.floor(Math.random() * 10000) + 1}>
+                      {item}
+                    </li>
+                  );
                 })} 
               </ul>
             </div>
