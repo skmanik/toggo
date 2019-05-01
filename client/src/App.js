@@ -59,15 +59,16 @@ class App extends Component {
           <section className="hero-body">
             <div className="container">
               <h2 className="title is-size-4 lillun">Things end up here.</h2>
-              <ul className="got-items">
+              <div className="got-items">
                 {this.state.items.map((item) => {
                   return (
-                    <li key={Math.floor(Math.random() * 10000) + 1}>
+                    <label key={Math.floor(Math.random() * 10000) + 1} className="checkbox">
                       {item}
-                    </li>
+                      <input type="checkbox" className="checkmate" />
+                    </label>
                   );
                 })} 
-              </ul>
+              </div>
             </div>
           </section>
         </section>
