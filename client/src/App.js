@@ -33,6 +33,10 @@ class App extends Component {
     }
   }
 
+  handleCheck = key => {
+    console.log("Hi!", key);
+  }
+
   render() {
     return (
       <div>
@@ -62,9 +66,9 @@ class App extends Component {
               <div className="got-items">
                 {this.state.items.map((item) => {
                   return (
-                    <label key={Math.floor(Math.random() * 10000) + 1} className="checkbox">
+                    <label value={item} key={Math.floor(Math.random() * 10000) + 1} className="checkbox">
                       {item}
-                      <input type="checkbox" className="checkmate" />
+                      <input onChange={this.handleCheck} type="checkbox" className="checkmate" />
                     </label>
                   );
                 })} 
